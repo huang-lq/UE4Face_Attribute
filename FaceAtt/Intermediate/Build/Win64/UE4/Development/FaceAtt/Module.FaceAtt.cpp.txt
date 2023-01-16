@@ -1,0 +1,123 @@
+H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4\Development\FaceAtt\Definitions.FaceAtt.h
+H:/Project/Demo/Plugins/FaceAtt/Source/FaceAtt/Private/Face.cpp
+H:\Project\Demo\Plugins\FaceAtt\Source\FaceAtt\Public\Face.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/AllowWindowsPlatformTypes.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/WindowsHWrapper.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/MinWindows.h
+D:\Windows Kits\10\include\10.0.20348.0\um\Windows.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\sdkddkver.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\excpt.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\windef.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\minwindef.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winnt.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\kernelspecs.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\basetsd.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\guiddef.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack4.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack4.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack4.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack2.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack2.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack2.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack8.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack1.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack1.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\apiset.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\ktmtypes.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winbase.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\apisetcconv.h
+D:\Windows Kits\10\include\10.0.20348.0\um\minwinbase.h
+D:\Windows Kits\10\include\10.0.20348.0\um\apiquery2.h
+D:\Windows Kits\10\include\10.0.20348.0\um\processenv.h
+D:\Windows Kits\10\include\10.0.20348.0\um\fileapifromapp.h
+D:\Windows Kits\10\include\10.0.20348.0\um\fileapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\debugapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\utilapiset.h
+D:\Windows Kits\10\include\10.0.20348.0\um\handleapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\errhandlingapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\fibersapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\namedpipeapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\profileapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\heapapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\ioapiset.h
+D:\Windows Kits\10\include\10.0.20348.0\um\synchapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\interlockedapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\processthreadsapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\sysinfoapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\memoryapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\enclaveapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\threadpoollegacyapiset.h
+D:\Windows Kits\10\include\10.0.20348.0\um\threadpoolapiset.h
+D:\Windows Kits\10\include\10.0.20348.0\um\jobapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\jobapi2.h
+D:\Windows Kits\10\include\10.0.20348.0\um\wow64apiset.h
+D:\Windows Kits\10\include\10.0.20348.0\um\libloaderapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\securitybaseapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\namespaceapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\systemtopologyapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\processtopologyapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\securityappcontainer.h
+D:\Windows Kits\10\include\10.0.20348.0\um\realtimeapiset.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\winerror.h
+D:\Windows Kits\10\include\10.0.20348.0\um\timezoneapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\wingdi.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack1.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack2.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack4.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack4.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winuser.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\pshpack2.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\poppack.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\tvout.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winnls.h
+D:\Windows Kits\10\include\10.0.20348.0\um\datetimeapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\stringapiset.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winnls.h
+D:\Windows Kits\10\include\10.0.20348.0\um\wincon.h
+D:\Windows Kits\10\include\10.0.20348.0\um\wincontypes.h
+D:\Windows Kits\10\include\10.0.20348.0\um\consoleapi.h
+D:\Windows Kits\10\include\10.0.20348.0\um\consoleapi2.h
+D:\Windows Kits\10\include\10.0.20348.0\um\consoleapi3.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winver.h
+D:\Windows Kits\10\include\10.0.20348.0\um\verrsrc.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winreg.h
+D:\Windows Kits\10\include\10.0.20348.0\um\reason.h
+D:\Windows Kits\10\include\10.0.20348.0\um\winnetwk.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\wnnc.h
+D:\Windows Kits\10\include\10.0.20348.0\shared\stralign.h
+D:\Windows Kits\10\include\10.0.20348.0\um\imm.h
+D:\Windows Kits\10\include\10.0.20348.0\um\ime_cmodes.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PreWindowsApi.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/PostWindowsApi.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/HideWindowsPlatformTypes.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\string
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xstring
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\limits
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\isa_availability.h
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\INCLUDE\cctype
+H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4\Inc\FaceAtt\Face.generated.h
+H:/Project/Demo/Plugins/FaceAtt/Source/FaceAtt/Private/FaceAtt.cpp
+H:\Project\Demo\Plugins\FaceAtt\Source\FaceAtt\Public\FaceAtt.h
+H:/Project/Demo/Plugins/FaceAtt/Source/FaceAtt/Private/FaceAttBPLibrary.cpp
+H:\Project\Demo\Plugins\FaceAtt\Source\FaceAtt\Public\FaceAttBPLibrary.h
+H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4\Inc\FaceAtt\FaceAttBPLibrary.generated.h

@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.FaceAtt.cpp.obj": [
+			"Face.cpp.obj",
+			"FaceAtt.cpp.obj",
+			"FaceAttBPLibrary.cpp.obj"
+		],
+		"Module.FaceAtt.gen.cpp.obj": [
+			"Face.gen.cpp.obj",
+			"FaceAtt.init.gen.cpp.obj",
+			"FaceAttBPLibrary.gen.cpp.obj"
+		]
+	}
+}

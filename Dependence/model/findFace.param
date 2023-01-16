@@ -1,0 +1,78 @@
+7767517
+76 88
+Input            InputImg                 0 1 InputImg
+Convolution      functional_1/conv2d/Conv2D 1 1 InputImg functional_1/batch_normalization/FusedBatchNormV3:0 0=12 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=324
+ReLU             functional_1/activation/Relu 1 1 functional_1/batch_normalization/FusedBatchNormV3:0 functional_1/activation/Relu:0
+Pooling          functional_1/max_pooling2d/MaxPool 1 1 functional_1/activation/Relu:0 functional_1/max_pooling2d/MaxPool:0 0=0 1=3 11=3 2=2 12=2 3=0 13=0 14=1 15=1 5=1
+Convolution      functional_1/conv2d_1/Conv2D 1 1 functional_1/max_pooling2d/MaxPool:0 functional_1/batch_normalization_1/FusedBatchNormV3:0 0=24 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=2592
+ReLU             functional_1/activation_1/Relu 1 1 functional_1/batch_normalization_1/FusedBatchNormV3:0 functional_1/activation_1/Relu:0
+Pooling          functional_1/max_pooling2d_1/MaxPool 1 1 functional_1/activation_1/Relu:0 functional_1/max_pooling2d_1/MaxPool:0 0=0 1=3 11=3 2=2 12=2 3=0 13=0 14=1 15=1 5=1
+Split            splitncnn_0              1 2 functional_1/max_pooling2d_1/MaxPool:0 functional_1/max_pooling2d_1/MaxPool:0_splitncnn_0 functional_1/max_pooling2d_1/MaxPool:0_splitncnn_1
+Convolution      functional_1/conv2d_2/Conv2D 1 1 functional_1/max_pooling2d_1/MaxPool:0_splitncnn_1 functional_1/batch_normalization_2/FusedBatchNormV3:0 0=24 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=5184
+ReLU             functional_1/activation_2/Relu 1 1 functional_1/batch_normalization_2/FusedBatchNormV3:0 functional_1/activation_2/Relu:0
+Pooling          functional_1/max_pooling2d_2/MaxPool 1 1 functional_1/activation_2/Relu:0 functional_1/max_pooling2d_2/MaxPool:0 0=0 1=3 11=3 2=2 12=2 3=0 13=0 14=1 15=1 5=1
+Split            splitncnn_1              1 2 functional_1/max_pooling2d_2/MaxPool:0 functional_1/max_pooling2d_2/MaxPool:0_splitncnn_0 functional_1/max_pooling2d_2/MaxPool:0_splitncnn_1
+Convolution      functional_1/conv2d_3/Conv2D 1 1 functional_1/max_pooling2d_2/MaxPool:0_splitncnn_1 functional_1/batch_normalization_3/FusedBatchNormV3:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=10368
+ReLU             functional_1/activation_3/Relu 1 1 functional_1/batch_normalization_3/FusedBatchNormV3:0 functional_1/activation_3/Relu:0
+Pooling          functional_1/max_pooling2d_3/MaxPool 1 1 functional_1/activation_3/Relu:0 functional_1/max_pooling2d_3/MaxPool:0 0=0 1=3 11=3 2=2 12=2 3=0 13=0 14=1 15=1 5=1
+Split            splitncnn_2              1 2 functional_1/max_pooling2d_3/MaxPool:0 functional_1/max_pooling2d_3/MaxPool:0_splitncnn_0 functional_1/max_pooling2d_3/MaxPool:0_splitncnn_1
+Convolution      functional_1/conv2d_4/Conv2D 1 1 functional_1/max_pooling2d_3/MaxPool:0_splitncnn_1 functional_1/batch_normalization_4/FusedBatchNormV3:0 0=96 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=41472
+ReLU             functional_1/activation_4/Relu 1 1 functional_1/batch_normalization_4/FusedBatchNormV3:0 functional_1/activation_4/Relu:0
+Pooling          functional_1/max_pooling2d_4/MaxPool 1 1 functional_1/activation_4/Relu:0 functional_1/max_pooling2d_4/MaxPool:0 0=0 1=3 11=3 2=2 12=2 3=0 13=0 14=1 15=1 5=1
+Interp           Upsample__79             1 1 functional_1/max_pooling2d_4/MaxPool:0 Upsample__79:0 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution      functional_1/conv2d_5/Conv2D 1 1 Upsample__79:0 functional_1/batch_normalization_5/FusedBatchNormV3:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=1 6=41472
+ReLU             functional_1/activation_5/Relu 1 1 functional_1/batch_normalization_5/FusedBatchNormV3:0 functional_1/activation_5/Relu:0
+Concat           functional_1/concatenate/concat 2 1 functional_1/activation_5/Relu:0 functional_1/max_pooling2d_3/MaxPool:0_splitncnn_0 functional_1/concatenate/concat:0 0=0
+Interp           Upsample__108            1 1 functional_1/concatenate/concat:0 Upsample__108:0 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution      functional_1/conv2d_6/Conv2D 1 1 Upsample__108:0 functional_1/batch_normalization_6/FusedBatchNormV3:0 0=24 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=1 6=20736
+ReLU             functional_1/activation_6/Relu 1 1 functional_1/batch_normalization_6/FusedBatchNormV3:0 functional_1/activation_6/Relu:0
+Concat           functional_1/concatenate_1/concat 2 1 functional_1/activation_6/Relu:0 functional_1/max_pooling2d_2/MaxPool:0_splitncnn_0 functional_1/concatenate_1/concat:0 0=0
+Split            splitncnn_3              1 3 functional_1/concatenate_1/concat:0 functional_1/concatenate_1/concat:0_splitncnn_0 functional_1/concatenate_1/concat:0_splitncnn_1 functional_1/concatenate_1/concat:0_splitncnn_2
+ConvolutionDepthWise functional_1/separable_conv2d_1/separable_conv2d/depthwise 1 1 functional_1/concatenate_1/concat:0_splitncnn_2 functional_1/separable_conv2d_1/separable_conv2d/depthwise:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=432 7=48
+Convolution      functional_1/separable_conv2d_1/separable_conv2d 1 1 functional_1/separable_conv2d_1/separable_conv2d/depthwise:0 functional_1/separable_conv2d_1/separable_conv2d:0 0=48 1=1 11=1 2=1 12=1 3=1 13=1 5=1 6=2304
+ReLU             functional_1/activation_9/Relu 1 1 functional_1/separable_conv2d_1/separable_conv2d:0 functional_1/activation_9/Relu:0
+BinaryOp         functional_1/add_1/add   2 1 functional_1/activation_9/Relu:0 functional_1/concatenate_1/concat:0_splitncnn_1 functional_1/add_1/add:0 0=0
+Split            splitncnn_4              1 3 functional_1/add_1/add:0 functional_1/add_1/add:0_splitncnn_0 functional_1/add_1/add:0_splitncnn_1 functional_1/add_1/add:0_splitncnn_2
+ConvolutionDepthWise functional_1/separable_conv2d_4/separable_conv2d/depthwise 1 1 functional_1/add_1/add:0_splitncnn_2 functional_1/separable_conv2d_4/separable_conv2d/depthwise:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=432 7=48
+Convolution      functional_1/separable_conv2d_4/separable_conv2d 1 1 functional_1/separable_conv2d_4/separable_conv2d/depthwise:0 functional_1/separable_conv2d_4/separable_conv2d:0 0=48 1=1 11=1 2=1 12=1 3=1 13=1 5=1 6=2304
+ReLU             functional_1/activation_14/Relu 1 1 functional_1/separable_conv2d_4/separable_conv2d:0 functional_1/activation_14/Relu:0
+Convolution      functional_1/conv2d_11/Conv2D 1 1 functional_1/add_1/add:0_splitncnn_1 functional_1/batch_normalization_13/FusedBatchNormV3:0 0=32 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=13824
+ReLU             functional_1/activation_13/Relu 1 1 functional_1/batch_normalization_13/FusedBatchNormV3:0 functional_1/activation_13/Relu:0
+Convolution      functional_1/conv2d_12/BiasAdd 1 1 functional_1/activation_13/Relu:0 functional_1/conv2d_12/BiasAdd:0 0=4 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=1152
+BinaryOp         functional_1/add_4/add   2 1 functional_1/activation_14/Relu:0 functional_1/add_1/add:0_splitncnn_0 functional_1/add_4/add:0 0=0
+Split            splitncnn_5              1 2 functional_1/add_4/add:0 functional_1/add_4/add:0_splitncnn_0 functional_1/add_4/add:0_splitncnn_1
+ConvolutionDepthWise functional_1/separable_conv2d_5/separable_conv2d/depthwise 1 1 functional_1/add_4/add:0_splitncnn_1 functional_1/separable_conv2d_5/separable_conv2d/depthwise:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=432 7=48
+Convolution      functional_1/separable_conv2d_5/separable_conv2d 1 1 functional_1/separable_conv2d_5/separable_conv2d/depthwise:0 functional_1/separable_conv2d_5/separable_conv2d:0 0=48 1=1 11=1 2=1 12=1 3=1 13=1 5=1 6=2304
+ReLU             functional_1/activation_15/Relu 1 1 functional_1/separable_conv2d_5/separable_conv2d:0 functional_1/activation_15/Relu:0
+BinaryOp         functional_1/add_5/add   2 1 functional_1/activation_15/Relu:0 functional_1/add_4/add:0_splitncnn_0 functional_1/add_5/add:0 0=0
+Convolution      functional_1/conv2d_13/BiasAdd 1 1 functional_1/add_5/add:0 functional_1/conv2d_13/BiasAdd:0 0=2 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=864
+Concat           functional_1/concatenate_4/concat 2 1 functional_1/conv2d_13/BiasAdd:0 functional_1/conv2d_12/BiasAdd:0 functional_1/concatenate_4/concat:0 0=0
+Permute          Transpose__339           1 1 functional_1/concatenate_4/concat:0 Transpose__339:0 0=3
+Reshape          functional_1/reshape_1/Reshape 1 1 Transpose__339:0 functional_1/reshape_1/Reshape:0 0=6 1=2304
+Interp           Upsample__137            1 1 functional_1/concatenate_1/concat:0_splitncnn_0 Upsample__137:0 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution      functional_1/conv2d_7/Conv2D 1 1 Upsample__137:0 functional_1/batch_normalization_7/FusedBatchNormV3:0 0=24 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=1 6=10368
+ReLU             functional_1/activation_7/Relu 1 1 functional_1/batch_normalization_7/FusedBatchNormV3:0 functional_1/activation_7/Relu:0
+Concat           functional_1/concatenate_2/concat 2 1 functional_1/max_pooling2d_1/MaxPool:0_splitncnn_0 functional_1/activation_7/Relu:0 functional_1/concatenate_2/concat:0 0=0
+Split            splitncnn_6              1 2 functional_1/concatenate_2/concat:0 functional_1/concatenate_2/concat:0_splitncnn_0 functional_1/concatenate_2/concat:0_splitncnn_1
+ConvolutionDepthWise functional_1/separable_conv2d/separable_conv2d/depthwise 1 1 functional_1/concatenate_2/concat:0_splitncnn_1 functional_1/separable_conv2d/separable_conv2d/depthwise:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=432 7=48
+Convolution      functional_1/separable_conv2d/separable_conv2d 1 1 functional_1/separable_conv2d/separable_conv2d/depthwise:0 functional_1/separable_conv2d/separable_conv2d:0 0=48 1=1 11=1 2=1 12=1 3=1 13=1 5=1 6=2304
+ReLU             functional_1/activation_8/Relu 1 1 functional_1/separable_conv2d/separable_conv2d:0 functional_1/activation_8/Relu:0
+BinaryOp         functional_1/add/add     2 1 functional_1/activation_8/Relu:0 functional_1/concatenate_2/concat:0_splitncnn_0 functional_1/add/add:0 0=0
+Split            splitncnn_7              1 3 functional_1/add/add:0 functional_1/add/add:0_splitncnn_0 functional_1/add/add:0_splitncnn_1 functional_1/add/add:0_splitncnn_2
+ConvolutionDepthWise functional_1/separable_conv2d_2/separable_conv2d/depthwise 1 1 functional_1/add/add:0_splitncnn_2 functional_1/separable_conv2d_2/separable_conv2d/depthwise:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=432 7=48
+Convolution      functional_1/separable_conv2d_2/separable_conv2d 1 1 functional_1/separable_conv2d_2/separable_conv2d/depthwise:0 functional_1/separable_conv2d_2/separable_conv2d:0 0=48 1=1 11=1 2=1 12=1 3=1 13=1 5=1 6=2304
+ReLU             functional_1/activation_11/Relu 1 1 functional_1/separable_conv2d_2/separable_conv2d:0 functional_1/activation_11/Relu:0
+Convolution      functional_1/conv2d_8/Conv2D 1 1 functional_1/add/add:0_splitncnn_1 functional_1/batch_normalization_10/FusedBatchNormV3:0 0=32 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=13824
+ReLU             functional_1/activation_10/Relu 1 1 functional_1/batch_normalization_10/FusedBatchNormV3:0 functional_1/activation_10/Relu:0
+Convolution      functional_1/conv2d_9/BiasAdd 1 1 functional_1/activation_10/Relu:0 functional_1/conv2d_9/BiasAdd:0 0=4 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=1152
+BinaryOp         functional_1/add_2/add   2 1 functional_1/activation_11/Relu:0 functional_1/add/add:0_splitncnn_0 functional_1/add_2/add:0 0=0
+Split            splitncnn_8              1 2 functional_1/add_2/add:0 functional_1/add_2/add:0_splitncnn_0 functional_1/add_2/add:0_splitncnn_1
+ConvolutionDepthWise functional_1/separable_conv2d_3/separable_conv2d/depthwise 1 1 functional_1/add_2/add:0_splitncnn_1 functional_1/separable_conv2d_3/separable_conv2d/depthwise:0 0=48 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=432 7=48
+Convolution      functional_1/separable_conv2d_3/separable_conv2d 1 1 functional_1/separable_conv2d_3/separable_conv2d/depthwise:0 functional_1/separable_conv2d_3/separable_conv2d:0 0=48 1=1 11=1 2=1 12=1 3=1 13=1 5=1 6=2304
+ReLU             functional_1/activation_12/Relu 1 1 functional_1/separable_conv2d_3/separable_conv2d:0 functional_1/activation_12/Relu:0
+BinaryOp         functional_1/add_3/add   2 1 functional_1/activation_12/Relu:0 functional_1/add_2/add:0_splitncnn_0 functional_1/add_3/add:0 0=0
+Convolution      functional_1/conv2d_10/BiasAdd 1 1 functional_1/add_3/add:0 functional_1/conv2d_10/BiasAdd:0 0=2 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=1 6=864
+Concat           functional_1/concatenate_3/concat 2 1 functional_1/conv2d_10/BiasAdd:0 functional_1/conv2d_9/BiasAdd:0 functional_1/concatenate_3/concat:0 0=0
+Permute          Transpose__363           1 1 functional_1/concatenate_3/concat:0 Transpose__363:0 0=3
+Reshape          functional_1/reshape/Reshape 1 1 Transpose__363:0 functional_1/reshape/Reshape:0 0=6 1=9216
+Concat           functional_1/concatenate_5/concat 2 1 functional_1/reshape/Reshape:0 functional_1/reshape_1/Reshape:0 concatenate_5 0=0

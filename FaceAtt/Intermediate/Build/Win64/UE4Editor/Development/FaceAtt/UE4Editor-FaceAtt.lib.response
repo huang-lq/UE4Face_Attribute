@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FaceAtt.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"H:\Project\Demo\Intermediate\Build\Win64\DemoEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4Editor\Development\FaceAtt\Module.FaceAtt.cpp.obj"
+"H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4Editor\Development\FaceAtt\Module.FaceAtt.gen.cpp.obj"
+"H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4Editor\Development\FaceAtt\Default.rc2.res"
+/OUT:"H:\Project\Demo\Plugins\FaceAtt\Intermediate\Build\Win64\UE4Editor\Development\FaceAtt\UE4Editor-FaceAtt.lib"
